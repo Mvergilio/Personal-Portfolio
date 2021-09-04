@@ -8,16 +8,25 @@
 </head>
 <body>
     <main id="main-doc">
-        <nav id="navbar">
-            <header>
-                <h1>CSS Grid layout</h1></header>
-            <a href="#Basic_Concepts_of_grid_layout" class="nav-link"></a>
-            <a href="" class="nav-link"></a>
-            <a href="" class="nav-link"></a>
-            <a href="" class="nav-link"></a>
-            <a href="" class="nav-link"></a>
-        </nav>
         
+        <header>
+           
+        <nav id="navbar">
+            <header> <h1>CSS Grid layout</h1></header>
+            <ul>
+            <li><a href="#Basic_Concepts_of_grid_layout" class="nav-link">Basic Concepts of grid layout</a></li>
+            <li><a href="#The_Grid_container" class="nav-link">The Grid container</a></li>
+            <li><a href="#Grid_tracks" class="nav-link">Grid tracks</a></li>
+            <li><a href="#Grid_lines" class="nav-link">Grid lines</a></li>
+            <li><a href="#Grid_cells" class="nav-link">Grid cells</a></li>
+             <li><a href="#Grid_areas">Grid areas</a></li>
+             <li><a href=""></a></li>
+             <li><a href=""></a></li>
+             <li><a href=""></a></li>
+             <li><a href=""></a></li>       
+        </ul>  
+        </nav>
+    </header>
         <section class="main-section" id="Basic_Concepts_of_grid_layout">
             <header>
                 <h2>Basic Concepts of grid layout</h2>
@@ -35,7 +44,7 @@
             
         </section>
 
-        <section class="main-section">
+        <section class="main-section" id="The_Grid_container">
             <header>
                 <h2>The Grid container</h2>
             </header>
@@ -47,7 +56,7 @@
             <img src="images/second code exemple.png" alt="CSS code example of how to set the dislpay to grid">
             <img src="images/grid first example.png" alt="display example of agride layout od the code above">
         </section>
-        <section class="main-section">
+        <section class="main-section" id="Grid_tracks">
             <header>
                 <h2>Grid tracks</h2>
             </header>
@@ -60,24 +69,45 @@
             <img src="images/grid track3.png" alt="aplyed CSS to the code above">
             <img src="images/grid track4.png" alt="Result of the CSS and HTML aplyed above">
         </section>
-        <section class="main-section">
-            <header></header>
-            <p></p>
-            <code></code>
-            <p></p>
-        </section>
-        <section class="main-section">
-            <header></header>
+        <section class="main-section" id="Grid_lines">
+            <header>
+                <h2>Grid lines</h2>
+            </header>
+            <p>It should be noted that when we define a grid we define the grid tracks, not the lines. Grid then gives us numbered lines to use when positioning items. In our three column, two row grid we have four column lines.</p>
 
-            <pre>
-                <code>
-                  
-                  </code>
-                </pre>
-                <img src="images/GRIP example.png" alt="Image representing a basic grid layout of the code above">
-        
+            <img src="images/GRID lines.png" alt="Image showing how grid lines would work.">
+            <p>Lines are numbered according to the writing mode of the document. In a left-to-right language, line 1 is on the left-hand side of the grid. In a right-to-left language, it is on the right-hand side of the grid. Lines can also be named, and we will look at how to do this in a later guide in this series.</p>
         </section>
-        
+        <section class="main-section" id="Grid_cells">
+            <header>
+                <h2>Grid cells</h2>
+            </header>
+                <p>A grid cell is the smallest unit on a grid. Conceptually it is like a table cell. As we saw in our earlier examples, once a grid is defined as a parent the child items will lay themselves out in one cell each of the defined grid. In the below image, I have highlighted the first cell of the grid.</p>
+                <img src="images/GRID cells.png" alt="image showing how grid cells works.">  
+
+        </section>
+
+       <section class="main-section" id="Grid_areas">
+            <head>
+                <h2>Grid areas</h2>
+            </head>
+            <p>Items can span one or more cells both by row or by column, and this creates a grid area. Grid areas must be rectangular – it isn’t possible to create an L-shaped area for example. The highlighted grid area spans two row and two column tracks.</p>
+            <img src="images/Grid areas.png" alt="Image showing how grid areas works">
+        </section>
+       <section class="main-section">
+
+       </section>
+
+       <section class="main-section">
+
+       </section>
+       <section class="main-section">
+
+       </section>
+       <section class="main-section">
+
+       </section>
+       
         
     </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
