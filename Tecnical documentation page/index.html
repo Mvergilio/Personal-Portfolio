@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tecnical Documentation Page</title>
+</head>
+<body>
+    <main id="main-doc">
+        <nav id="navbar">
+            <header>
+                <h1>CSS Grid layout</h1></header>
+            <a href="#Basic_Concepts_of_grid_layout" class="nav-link"></a>
+            <a href="" class="nav-link"></a>
+            <a href="" class="nav-link"></a>
+            <a href="" class="nav-link"></a>
+            <a href="" class="nav-link"></a>
+        </nav>
+        
+        <section class="main-section" id="Basic_Concepts_of_grid_layout">
+            <header>
+                <h2>Basic Concepts of grid layout</h2>
+            </header>
+            <p>CSS Grid Layout introduces a two-dimensional grid system to CSS. Grids can be used to lay out major page areas or small user interface elements. This article introduces the CSS Grid Layout and the new terminology that is part of the CSS Grid Layout Level 1 specification. The features shown in this overview will then be explained in greater detail in the rest of this guide.</p>
+
+                <h3>What is grid?</h3>
+               <p>A grid is a set of intersecting horizontal and vertical lines defining columns and rows. Elements can be placed onto the grid within these column and row lines. CSS grid layout has the following features:</p>
+                <ul>
+                    <li>Fixed and flexible track sizes</li>
+                    <li>Item placement</li>
+                    <li>Creation of additional tracks to hold content</li>
+                    <li>Alignment control</li>
+                    <li>Control of overlapping content</li>
+            
+        </section>
+
+        <section class="main-section">
+            <header>
+                <h2>The Grid container</h2>
+            </header>
+            <p>We create a grid container by declaring <code>display: grid</code> or <code>display: inline-grid </code> on an element. As soon as we do this, all <span>direct children</span> of that element become <span>grid items</span>.</p>
+            <img src="images/fisrt code example.png" alt="HTML code example display a div and its divs children">
+            <p>In this example, I have a containing <code>div</code> with a class of wrapper and, inside are five child elements.</p>
+        
+            <p>I make the <span>.wrapper</span> a grid container.</p>
+            <img src="images/second code exemple.png" alt="CSS code example of how to set the dislpay to grid">
+            <img src="images/grid first example.png" alt="display example of agride layout od the code above">
+        </section>
+        <section class="main-section">
+            <header>
+                <h2>Grid tracks</h2>
+            </header>
+            <p>We define rows and columns on our grid with the <code>grid-template-columns</code> and <code>grid-template-rows</code> properties. These define grid tracks. A grid track is the space between any two lines on the grid. In the below image you can see a track highlighted – this is the first row track in our grid.</p>
+            <img src="images/grid track1.png" alt="Image representing a diagram of how grid tracks would work">
+            <h3>Basic example</h3>
+            <p>I can add to our earlier example by adding the grid-template-columns property, then defining the size of the column tracks.</p>
+            <p>I have now created a grid with three 200-pixel-wide column tracks. The child items will be laid out on this grid one in each grid cell.</p>
+            <img src="images/grid track2.png" alt="The same example displyed above on the grid conteainer section">
+            <img src="images/grid track3.png" alt="aplyed CSS to the code above">
+            <img src="images/grid track4.png" alt="Result of the CSS and HTML aplyed above">
+        </section>
+        <section class="main-section">
+            <header></header>
+            <p></p>
+            <code></code>
+            <p></p>
+        </section>
+        <section class="main-section">
+            <header></header>
+
+            <pre>
+                <code>
+                  
+                  </code>
+                </pre>
+                <img src="images/GRIP example.png" alt="Image representing a basic grid layout of the code above">
+        
+        </section>
+        
+        
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
