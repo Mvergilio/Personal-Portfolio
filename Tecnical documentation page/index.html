@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,11 +20,10 @@
             <li><a href="#Grid_tracks" class="nav-link">Grid tracks</a></li>
             <li><a href="#Grid_lines" class="nav-link">Grid lines</a></li>
             <li><a href="#Grid_cells" class="nav-link">Grid cells</a></li>
-             <li><a href="#Grid_areas">Grid areas</a></li>
-             <li><a href=""></a></li>
-             <li><a href=""></a></li>
-             <li><a href=""></a></li>
-             <li><a href=""></a></li>       
+             <li><a href="#Grid_areas" class="nav-link">Grid areas</a></li>
+             <li><a href="#Gutters" class="nav-link">Gutters</a></li>
+             <li><a href="#Nesting_grids" class="nav-link"> Nesting grids</a></li>
+                   
         </ul>  
         </nav>
     </header>
@@ -88,26 +88,31 @@
         </section>
 
        <section class="main-section" id="Grid_areas">
-            <head>
+            <header>
                 <h2>Grid areas</h2>
-            </head>
+            </header>
             <p>Items can span one or more cells both by row or by column, and this creates a grid area. Grid areas must be rectangular – it isn’t possible to create an L-shaped area for example. The highlighted grid area spans two row and two column tracks.</p>
             <img src="images/Grid areas.png" alt="Image showing how grid areas works">
         </section>
-       <section class="main-section">
-
-       </section>
-
-       <section class="main-section">
-
-       </section>
-       <section class="main-section">
-
-       </section>
-       <section class="main-section">
-
+       <section class="main-section" id="Gutters">
+        <header>
+            <h2>Gutters</h2>
+        </header>
+        <p>Gutters or alleys between grid cells can be created using the <code>column-gap</code> and <code>row-gap</code> properties, or the shorthand <code>gap</code>. In the below example, I am creating a 10-pixel gap between columns and a 1em gap between rows.</p>
+            <img src="images/Gutters1.png" alt="CSS style of the gutters">
+            <img src="images/Gutters2.png" alt="HTML of the gutters">
+             <img src="images/Gutters3.png" alt="results of the HTML and CSS style showing how gutters works">
+        
+        <p>Any space used by gaps will be accounted for before space is assigned to the flexible length fr tracks, and gaps act for sizing purposes like a regular grid track, however you cannot place anything into a gap. In terms of line-based positioning, the gap acts like a thick line.</p>
        </section>
        
+       <section class="main-section" id="Nesting_grids">
+        <header>
+            <h2>Nesting grids</h2>
+        </header>
+        <p>A grid item can become a grid container. In the following example, I have the three-column grid that I created earlier, with our two positioned items. In this case the first item has some sub-items. As these items are not direct children of the grid they do not participate in grid layout and so display in a normal document flow.</p>
+        <img src="images/Nesting grids.png" alt="Image showing how nesting grid would work.">
+    </section>
         
     </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
