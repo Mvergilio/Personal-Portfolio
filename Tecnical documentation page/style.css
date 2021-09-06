@@ -5,45 +5,134 @@
     padding: 0;
     box-sizing: border-box;
 }
+::selection{
+    background-color: black;
+    color: floralwhite;
+}
 body{
     background-color: floralwhite;
     width:auto; height: auto;
 }
 main{
-    width:auto; height: auto;
+    width:100vw; height: auto;
+   
+}
+h1{
+    text-align: center;
+    padding: auto;
+    margin-top: 5rem;  
+}
+nav  {
+    box-shadow: 0.5rem 0 0.5rem 1rem rgba(0, 0, 0,0.1);
+    position: fixed;
+    left: 0%;    
+    height: 100vh;
+    display:flex;
+    background-color: rgb(227, 240, 227);
+    width: 25vw;
+    flex-direction: column;    
+}
+.nav_header{
+    grid-area: head1;
+    width: 25vw; height: 3rem;
+    margin-top: 1rem; margin-bottom: 1rem;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+nav ul{
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+}
+nav li{
+    left:0%;
+    list-style-type: none;
+    height: 3rem;
+    width: 100%;
+    border-bottom: 2px solid black; 
+}
+nav li:hover{
+    transform: scale(1.1);
+    border-bottom: 2px dotted indigo;
+}
+a{
+    font-size: 1.2rem;
+    left:0%;
+    color:gray;
+    padding-top: 20px;
+    display: block;
+    text-decoration: none;
+}
+nav li a:hover{
+    color:indigo;
+}
+.main-section{
+    margin:5rem 1rem 5rem 1rem;
+    padding: 2rem 1rem 2rem 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+main{
     display: grid;
     grid-auto-rows: auto;
-    grid-auto-columns: 80vw;
+    grid-auto-columns: 25vw 80vw;
     grid-template-areas: 
-    "head head"
-    "nav section"
-    "nav section"
-    "nav section"
-    "nav section"
-    ". section"
-    ". section"
-    ". section"
-    ". section"
-    ". section"
-
+    "head1 head"
+    "nav section1"
+    "nav section2"
+    "nav section3"
+    "nav section4"
+    ". section5"
+    ". section6"
+    ". section7"
+    ". section8"
+    
     ;
 }
 h1{
     grid-area: head;
 }
-nav  {
-    display:flex;
-    background-color: black;
-    width: 20vw;
-    grid-area: nav;
+nav{
+grid-area: nav;
+}
+#Basic_Concepts_of_grid_layout{
+    grid-area: section1;
 }
 
-.main-section{
-    grid-area: section;
-    text-align: center;
-    margin-top: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+#The_Grid_container{
+    grid-area: section2;
+}
+#Grid_tracks{
+    grid-area: section3;
+}
+#Grid_lines{
+grid-area: section4;
+}
+#Grid_cells{
+    grid-area: section5;
+}
+#Grid_areas{
+    grid-area: section6;
+
+}
+#Gutters{
+    grid-area: section7;
+}
+#Nesting_grids{
+    grid-area: section8;
 }
