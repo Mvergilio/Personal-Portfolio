@@ -5,3 +5,45 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: floralwhite;
+    width:auto; height: auto;
+}
+main{
+    width:auto; height: auto;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-auto-columns: 80vw;
+    grid-template-areas: 
+    "head head"
+    "nav section"
+    "nav section"
+    "nav section"
+    "nav section"
+    ". section"
+    ". section"
+    ". section"
+    ". section"
+    ". section"
+
+    ;
+}
+h1{
+    grid-area: head;
+}
+nav  {
+    display:flex;
+    background-color: black;
+    width: 20vw;
+    grid-area: nav;
+}
+
+.main-section{
+    grid-area: section;
+    text-align: center;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}

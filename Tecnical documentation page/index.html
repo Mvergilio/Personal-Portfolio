@@ -9,11 +9,10 @@
 </head>
 <body>
     <main id="main-doc">
-        
-        <header>
+        <h1>Basics of a Grid Layout</h1>
            
         <nav id="navbar">
-            <header> <h1>CSS Grid layout</h1></header>
+            <header> <h2>CSS Grid layout</h2></header>
             <ul>
             <li><a href="#Basic_Concepts_of_grid_layout" class="nav-link">Basic Concepts of grid layout</a></li>
             <li><a href="#The_Grid_container" class="nav-link">The Grid container</a></li>
@@ -26,7 +25,6 @@
                    
         </ul>  
         </nav>
-    </header>
         <section class="main-section" id="Basic_Concepts_of_grid_layout">
             <header>
                 <h2>Basic Concepts of grid layout</h2>
@@ -41,7 +39,7 @@
                     <li>Creation of additional tracks to hold content</li>
                     <li>Alignment control</li>
                     <li>Control of overlapping content</li>
-            
+                </ul>
         </section>
 
         <section class="main-section" id="The_Grid_container">
@@ -49,25 +47,25 @@
                 <h2>The Grid container</h2>
             </header>
             <p>We create a grid container by declaring <code>display: grid</code> or <code>display: inline-grid </code> on an element. As soon as we do this, all <span>direct children</span> of that element become <span>grid items</span>.</p>
-            <img src="images/fisrt code example.png" alt="HTML code example display a div and its divs children">
+            <img src="images/fisrt_code_example.png" alt="HTML code example display a div and its divs children">
             <p>In this example, I have a containing <code>div</code> with a class of wrapper and, inside are five child elements.</p>
         
             <p>I make the <span>.wrapper</span> a grid container.</p>
-            <img src="images/second code exemple.png" alt="CSS code example of how to set the dislpay to grid">
-            <img src="images/grid first example.png" alt="display example of agride layout od the code above">
+            <img src="images/second_code_exemple.png" alt="CSS code example of how to set the dislpay to grid">
+            <img src="images/grid_first_example.png" alt="display example of agride layout od the code above">
         </section>
         <section class="main-section" id="Grid_tracks">
             <header>
                 <h2>Grid tracks</h2>
             </header>
             <p>We define rows and columns on our grid with the <code>grid-template-columns</code> and <code>grid-template-rows</code> properties. These define grid tracks. A grid track is the space between any two lines on the grid. In the below image you can see a track highlighted – this is the first row track in our grid.</p>
-            <img src="images/grid track1.png" alt="Image representing a diagram of how grid tracks would work">
+            <img src="images/grid_track1.png" alt="Image representing a diagram of how grid tracks would work">
             <h3>Basic example</h3>
             <p>I can add to our earlier example by adding the grid-template-columns property, then defining the size of the column tracks.</p>
             <p>I have now created a grid with three 200-pixel-wide column tracks. The child items will be laid out on this grid one in each grid cell.</p>
-            <img src="images/grid track2.png" alt="The same example displyed above on the grid conteainer section">
-            <img src="images/grid track3.png" alt="aplyed CSS to the code above">
-            <img src="images/grid track4.png" alt="Result of the CSS and HTML aplyed above">
+            <img src="images/grid_track2.png" alt="The same example displyed above on the grid conteainer section">
+            <img src="images/grid_track3.png" alt="aplyed CSS to the code above">
+            <img src="images/grid_track4.png" alt="Result of the CSS and HTML aplyed above">
         </section>
         <section class="main-section" id="Grid_lines">
             <header>
@@ -75,7 +73,7 @@
             </header>
             <p>It should be noted that when we define a grid we define the grid tracks, not the lines. Grid then gives us numbered lines to use when positioning items. In our three column, two row grid we have four column lines.</p>
 
-            <img src="images/GRID lines.png" alt="Image showing how grid lines would work.">
+            <img src="images/GRID_lines.png" alt="Image showing how grid lines would work.">
             <p>Lines are numbered according to the writing mode of the document. In a left-to-right language, line 1 is on the left-hand side of the grid. In a right-to-left language, it is on the right-hand side of the grid. Lines can also be named, and we will look at how to do this in a later guide in this series.</p>
         </section>
         <section class="main-section" id="Grid_cells">
@@ -83,7 +81,7 @@
                 <h2>Grid cells</h2>
             </header>
                 <p>A grid cell is the smallest unit on a grid. Conceptually it is like a table cell. As we saw in our earlier examples, once a grid is defined as a parent the child items will lay themselves out in one cell each of the defined grid. In the below image, I have highlighted the first cell of the grid.</p>
-                <img src="images/GRID cells.png" alt="image showing how grid cells works.">  
+                <img src="images/GRID_cells.png" alt="image showing how grid cells works.">  
 
         </section>
 
@@ -92,7 +90,7 @@
                 <h2>Grid areas</h2>
             </header>
             <p>Items can span one or more cells both by row or by column, and this creates a grid area. Grid areas must be rectangular – it isn’t possible to create an L-shaped area for example. The highlighted grid area spans two row and two column tracks.</p>
-            <img src="images/Grid areas.png" alt="Image showing how grid areas works">
+            <img src="images/Grid_areas.png" alt="Image showing how grid areas works">
         </section>
        <section class="main-section" id="Gutters">
         <header>
@@ -111,7 +109,7 @@
             <h2>Nesting grids</h2>
         </header>
         <p>A grid item can become a grid container. In the following example, I have the three-column grid that I created earlier, with our two positioned items. In this case the first item has some sub-items. As these items are not direct children of the grid they do not participate in grid layout and so display in a normal document flow.</p>
-        <img src="images/Nesting grids.png" alt="Image showing how nesting grid would work.">
+        <img src="images/Nesting_grids.png" alt="Image showing how nesting grid would work.">
     </section>
         
     </main>
