@@ -11,10 +11,10 @@
 }
 body{
     background-color: floralwhite;
-    width:auto; height: auto;
-}
+   }
+
 main{
-    width:100vw; height: auto;
+    width:100vw;
    
 }
 h1{
@@ -70,27 +70,44 @@ nav li a:hover{
     color:indigo;
 }
 .main-section{
-    margin:5rem 1rem 5rem 1rem;
-    padding: 2rem 1rem 2rem 1rem;
-    text-align: center;
-    margin-top: 2rem;
+    height: auto;
+    margin: 1rem;
+    padding: 1rem 2rem 1rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
 }
+
+code{
+    font-family:monospace;
+}
+section ul{
+    margin: 2rem;
+    height: auto;
+}
+section ul li{
+    text-align: start;
+    margin: 1rem;
+    text-decoration: underline;
+}
+section header h2, h3{
+    margin: 2rem;
+}
 img{
     max-width: 100%;
     height: auto;
+    margin:2rem;
 }
-
+.image-out-of-sight{
+    width: 90%;
+}
 
 
 
 main{
     display: grid;
-    grid-auto-rows: auto;
-    grid-auto-columns: 25vw 80vw;
+    grid-auto-columns: 25vw 70vw;
     grid-template-areas: 
     "head1 head"
     "nav section1"
