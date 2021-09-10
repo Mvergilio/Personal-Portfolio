@@ -17,6 +17,9 @@ main{
     width:100vw;
    
 }
+input, label{
+    display: none;
+}
 h1{
     text-align: center;
     padding: auto;
@@ -29,18 +32,16 @@ nav  {
     height: 100vh;
     display:flex;
     background-color: rgb(227, 240, 227);
-    width: 25vw;
     flex-direction: column;    
 }
 .nav_header{
-    grid-area: head1;
     width: 25vw; height: 3rem;
     margin-top: 1rem; margin-bottom: 1rem;
     text-align: center;
     border-bottom: 1px solid black;
 }
 nav ul{
-    margin:auto;
+    margin:1rem;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -92,7 +93,7 @@ section ul li{
     text-decoration: underline;
 }
 section header h2, h3{
-    margin: 2rem;
+    margin: 2rem 0.5rem 2rem 0.5rem;
 }
 img{
     max-width: 100%;
@@ -127,7 +128,7 @@ h1{
 nav{
 grid-area: nav;
 }
-#Basic_Concepts_of_grid_layout{
+#Basic_Concepts{
     grid-area: section1;
 }
 
@@ -152,4 +153,58 @@ grid-area: section4;
 }
 #Nesting_grids{
     grid-area: section8;
+}
+
+@media (max-width: 1025px){
+    
+    a{
+        font-size:1rem;
+    }
+}
+@media (max-width: 770px){
+    .nav_header{
+        font-size: 1.2rem;
+    }
+    nav li{
+        padding-bottom: 3.5rem;
+    }
+    a{
+        font-size: 0.8rem;
+        color: indigo;
+    }
+
+}
+@media (max-width: 480px){
+    section header h2{
+        font-size: 1.3rem;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+    section ul li{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 321px){
+#main-doc{
+    grid-template-columns: repeat(10, 2rem);
+    grid-template-rows: 4rem repeat(8, auto);
+    
+}
+label{
+    position: fixed;
+    display: inline-block;
+    z-index: 2;
+    grid-area: 1/1/2/2;
+
+}
+#navbar{
+    z-index: 1;
+    background-color: lightblue;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
 }

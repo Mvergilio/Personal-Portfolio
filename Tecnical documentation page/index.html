@@ -10,12 +10,15 @@
 </head>
 <body>
     <main id="main-doc">
+        <input type="checkbox" name="menu" id="menu">
+        <label for="menu" class="menu_checked"><i class="fas fa-bars"></i></label>
+        <label for="menu" class="menu_unchecked"><i class="fas fa-times"></i></label>
+
         <h1>Basics of a Grid Layout</h1>
-           
         <nav id="navbar">
             <header> <h2 class="nav_header">CSS Grid Layout</h2></header><br>
             <ul>
-                <li><a href="#Basic_Concepts_of_grid_layout" class="nav-link"><i class="fas fa-caret-right"></i>Basic Concepts of grid layout</a></li>
+                <li><a href="#Basic_Concepts" class="nav-link"><i class="fas fa-caret-right"></i>Basic Concepts</a></li>
                 <li><a href="#The_Grid_container" class="nav-link"><i class="fas fa-caret-right"></i>The Grid container</a></li>
                 <li><a href="#Grid_tracks" class="nav-link"><i class="fas fa-caret-right"></i>Grid tracks</a></li>
                 <li><a href="#Grid_lines" class="nav-link"><i class="fas fa-caret-right"></i>Grid lines</a></li>
@@ -26,9 +29,9 @@
                    
             </ul>  
         </nav>
-        <section class="main-section" id="Basic_Concepts_of_grid_layout">
+        <section class="main-section" id="Basic_Concepts">
             <header>
-                <h2>Basic Concepts of grid layout</h2>
+                <h2>Basic Concepts</h2>
             </header>
             <p>CSS Grid Layout introduces a two-dimensional grid system to CSS. Grids can be used to lay out major page areas or small user interface elements. This article introduces the CSS Grid Layout and the new terminology that is part of the CSS Grid Layout Level 1 specification. The features shown in this overview will then be explained in greater detail in the rest of this guide.</p>
 
@@ -100,7 +103,7 @@
         <p>Gutters or alleys between grid cells can be created using the <code>column-gap</code> and <code>row-gap</code> properties, or the shorthand <code>gap</code>. In the below example, I am creating a 10-pixel gap between columns and a 1em gap between rows.</p>
             <img src="images/Gutters1.png" alt="CSS style of the gutters">
             <img src="images/Gutters2.png" alt="HTML of the gutters">
-             <img src="images/gutters_example.png" alt="results of the HTML and CSS style showing how gutters works" class="image-out-of-sight">
+            <img src="images/gutters_example.png" alt="results of the HTML and CSS style showing how gutters works" class="image-out-of-sight">
         
         <p>Any space used by gaps will be accounted for before space is assigned to the flexible length fr tracks, and gaps act for sizing purposes like a regular grid track, however you cannot place anything into a gap. In terms of line-based positioning, the gap acts like a thick line.</p>
        </section>
@@ -115,6 +118,6 @@
         
     </main>
     
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
 </body>
 </html>
