@@ -216,28 +216,6 @@ nav {
     section ul li {
         font-size: 0.8rem;
     }
-}
-
-@media (max-width: 321px) {
-    #main-doc {
-        grid-template-columns: repeat(10, 2rem);
-        grid-template-rows: 4rem repeat(16, 50vh);
-    }
-    label {
-        left: 0;
-        position: fixed;
-        width: auto;
-        height: auto;
-        z-index: 2;
-        grid-area: 1/1/2/2;
-    }
-    .fa-bars,
-    .fa-times {
-        margin: 0.2rem;
-        position: absolute;
-        font-size: 3.5rem;
-        color: indigo;
-    }
     /*Toggle mennu*/
     .fa-bars {
         font-size: 3rem;
@@ -258,6 +236,21 @@ nav {
         display: none;
     }
     /* End of toggle menu*/
+    label {
+        left: 0;
+        position: fixed;
+        width: auto;
+        height: auto;
+        z-index: 2;
+        grid-area: 1/1/2/2;
+    }
+    .fa-bars,
+    .fa-times {
+        margin: 0.2rem;
+        position: absolute;
+        font-size: 3.5rem;
+        color: indigo;
+    }
     .nav_header {
         width: 100%;
     }
@@ -302,6 +295,13 @@ nav {
         margin: 1rem;
         height: auto;
         width: 90vw;
+    }
+}
+
+@media (max-width: 321px) {
+    #main-doc {
+        grid-template-columns: repeat(10, 2rem);
+        grid-template-rows: 4rem repeat(16, 50vh);
     }
     h1 {
         font-size: 1.2rem;
