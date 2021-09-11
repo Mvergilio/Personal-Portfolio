@@ -220,20 +220,23 @@ nav {
     .fa-bars {
         font-size: 3rem;
     }
-    .menu_checked {
+    #navbar {
         display: none;
+    }
+    .menu_checked {
+        display: block;
     }
     .menu_unchecked {
-        display: block;
+        display: none;
     }
     input:checked~.menu_unchecked {
-        display: none;
-    }
-    input:checked~.menu_checked {
         display: block;
     }
-    input:checked~#navbar {
+    input:checked~.menu_checked {
         display: none;
+    }
+    input:checked~#navbar {
+        display: block;
     }
     /* End of toggle menu*/
     label {
@@ -296,6 +299,10 @@ nav {
         height: auto;
         width: 90vw;
     }
+    img {
+        margin: auto;
+        margin-top: 0.5rem;
+    }
 }
 
 @media (max-width: 321px) {
@@ -310,10 +317,6 @@ nav {
     }
     h2 {
         margin-top: 0.5rem
-    }
-    img {
-        margin: auto;
-        margin-top: 0.5rem;
     }
     #Basic_Concepts {
         grid-area: 2/2/4/10;
