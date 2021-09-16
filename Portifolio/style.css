@@ -1,10 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,300&family=Roboto+Slab:wght@300;400;600&display=swap');
 
-:root {
+/*     font-family: 'Open Sans', sans-serif;
+
+    font-family: 'Roboto Slab', serif; */
+
+ :root {
     --gray: #f5f0e1;
     --blue: #1e3d59;
     --orange: #ff6e40;
@@ -12,12 +12,148 @@
     --gradient: linear-gradient(45deg, rgba(255, 193, 59, 1) 35%, rgba(255, 110, 64, 1) 100%);
 }
 
+* {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--gray);
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 *::selection {
     background-color: var(--blue);
     color: var(--gray);
 }
 
+html {
+    font-weight: 600;
+}
+
+
+/* started of the grid */
+
+main {
+    display: grid;
+    grid-template-rows: 3rem auto auto auto;
+    grid-template-areas: "header" "about" "project" "contact" "footer";
+}
+
+#navbar {
+    grid-area: header;
+}
+
+#welcome-section {
+    grid-area: about;
+}
+
+#projects {
+    grid-area: project;
+}
+
+#contact {
+    grid-area: contact;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+/* End of the grid */
+
 section {
     min-height: 100vh;
     min-width: 100vw;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    background-color: var(--blue);
+    height: 3rem;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+logo {
+    padding-left: 0.5rem;
+}
+
+logo,
+#navbar span {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+}
+
+span {
+    color: var(--orange);
+}
+
+nav {
+    margin-right: 1rem;
+    height: 100%;
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--blue);
+}
+
+.navlink {
+    padding: 0.6rem;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#welcome-section {
+    background-color: var(--orange);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1,
+h2,
+h1>span {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+}
+
+h1,
+h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    margin: 1rem;
+    color: var(--yellow);
+    font-size: 1.5em;
+}
+
+h1>span {
+    color: var(--blue);
+}
+
+.welcome-box {
+    margin: 1rem;
+    width: 90vw;
+}
+
+.welcome-box h2 {
+    color: var(--blue);
+}
+
+.welcome-box p {
+    font-size: 0.8rem;
+    margin: 1rem;
 }
