@@ -353,3 +353,21 @@ footer {
     border-top: 5px solid var(--gray);
     background: var(--blue);
 }
+
+
+/* Midea queries from a mobile to desktop */
+
+@media screen and (min-width:700px) {
+    section {
+        min-height: auto;
+    }
+    nav {
+        width: 40vw;
+    }
+    #welcome-section {
+        justify-content: center;
+    }
+    .welcome-box {
+        background-color: #ffc13b;
+    }
+}
