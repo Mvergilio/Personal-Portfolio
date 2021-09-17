@@ -169,7 +169,7 @@ h1>span {
 }
 
 .welcome-box p {
-    font-size: 0.8rem;
+    font-size: 1em;
     margin: 1rem;
 }
 
@@ -219,7 +219,7 @@ img {
     border-top-right-radius: 5px;
     max-width: 100%;
     height: auto;
-    border-bottom: 4px solid var(--orange);
+    border-bottom: 4px solid var(--yellow);
 }
 
 .btn-projects {
@@ -232,7 +232,7 @@ img {
 
 .btn-projects p {
     color: var(--yellow);
-    font-size: 0.8rem;
+    font-size: 0.9em;
 }
 
 
