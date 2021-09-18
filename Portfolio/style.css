@@ -422,20 +422,20 @@ footer {
     }
     /* hover efect on the project links */
     .project-container a {
-        transition: transform 1s;
+        transition: transform 600ms;
     }
     .project-container a:hover {
         transform: scale(1.09);
     }
     /* hover efect on the contact links */
     .contact-container a {
-        transition: transform 1s;
+        transition: transform 600ms;
     }
     .contact-container a:hover {
         transform: scale(1.5);
     }
     .contact-container a i {
-        transition: color 1s;
+        transition: color 600ms;
     }
     .contact-container a i:hover {
         color: var(--blue);
