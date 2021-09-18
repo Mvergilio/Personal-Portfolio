@@ -409,11 +409,16 @@ footer {
 }
 
 @media screen and (min-width:800px) {
-    #welcome-section p {
-        transition: font-size 2.5s;
+    nav a {
+        width: 10rem;
+        text-align: center;
+        transition: border 600ms, letter-spacing 600ms, color 600ms, background 600ms;
     }
-    #welcome-section p:hover {
-        font-size: 1.1em;
+    nav a:hover {
+        border: 1px solid var(--orange);
+        letter-spacing: 2px;
+        color: var(--blue);
+        background: var(--gray);
     }
     /* hover efect on the project links */
     .project-container a {
@@ -429,10 +434,10 @@ footer {
     .contact-container a:hover {
         transform: scale(1.5);
     }
-    a i {
+    .contact-container a i {
         transition: color 1s;
     }
-    a i:hover {
+    .contact-container a i:hover {
         color: var(--blue);
     }
 }
