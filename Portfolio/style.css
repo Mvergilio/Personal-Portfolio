@@ -28,6 +28,7 @@
 }
 
 html {
+    background: var(--gradient);
     font-weight: 600;
 }
 
@@ -190,12 +191,14 @@ h1>span {
 }
 
 #projects a {
-    border: 1px solid var(--blue);
+    display: inline;
+    border: 2px solid var(--blue);
     border-radius: 5px;
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-decoration: none;
     background-color: var(--blue);
+    box-shadow: 2px 3px 5px 1px rgba(0, 0, 0, 0.5);
 }
 
 .fas {
@@ -209,12 +212,13 @@ h1>span {
 }
 
 .project-tile {
+    display: block;
     width: 90vw;
     height: auto;
-    box-shadow: 2px 3px 5px 1px rgba(0, 0, 0, 0.5);
 }
 
 img {
+    display: block;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     max-width: 100%;
@@ -367,7 +371,133 @@ footer {
     #welcome-section {
         justify-content: center;
     }
-    .welcome-box {
-        background-color: #ffc13b;
+    #welcome-section h1 {
+        font-size: 3em;
+    }
+    #projects {
+        height: auto;
+    }
+    .project-container {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .project-tile {
+        width: 40vw;
+        height: auto;
+    }
+    .project-container a {
+        margin-left: 2px solid (--blue);
+        width: 40vw;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    /* contact section */
+    .contact-container {
+        width: 60vw;
+        height: auto;
+        margin: 3rem;
+    }
+    .contact-container a {
+        font-size: 10vw;
+        height: 11vw;
+    }
+}
+
+@media screen and (min-width:800px) {
+    #welcome-section p {
+        transition: font-size 2.5s;
+    }
+    #welcome-section p:hover {
+        font-size: 1.1em;
+    }
+    /* hover efect on the project links */
+    .project-container a {
+        transition: transform 1s;
+    }
+    .project-container a:hover {
+        transform: scale(1.09);
+    }
+    /* hover efect on the contact links */
+    .contact-container a {
+        transition: font-size 0.5s;
+    }
+    .contact-container a:hover {
+        font-size: 11vw;
+    }
+    a i {
+        transition: color 0.5s;
+    }
+    a i:hover {
+        color: var(--blue);
+    }
+}
+
+@media screen and (min-width:1000px) {
+    section {
+        min-height: 100vh;
+    }
+    #welcome-section {
+        height: 100vh;
+        justify-content: space-around;
+    }
+    .title {
+        font-size: larger;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 20rem;
+    }
+    #welcome-section .about-me {
+        font-size: 1.5em;
+        width: 75vw;
+    }
+    /* Project section */
+    #projects h2 {
+        margin: 1.5rem;
+        font-size: 2em;
+    }
+    /* contact section */
+    #contact h2 {
+        font-size: 3em;
+    }
+    #contact h3 {
+        font-size: 2em;
+    }
+    .contact-container {
+        width: 60vw;
+    }
+    .contact-container a {
+        font-size: 5em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    section {
+        min-height: 100vh;
+    }
+    #welcome-section {
+        justify-content: center;
+    }
+    /* Project section */
+    #projects h2 {
+        font-size: 3em;
+    }
+    .project-container a {
+        width: 35vw;
+    }
+    .project-tile {
+        width: 35vw;
+    }
+    .contact-container {
+        width: 50vw;
+    }
+    .contact-container a {
+        height: 8vw;
+        font-size: 6vw;
     }
 }
