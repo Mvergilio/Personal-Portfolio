@@ -54,6 +54,7 @@ main {
 }
 
 #navbar {
+    z-index: 1000;
     grid-area: header;
 }
 
@@ -423,13 +424,13 @@ footer {
     }
     /* hover efect on the contact links */
     .contact-container a {
-        transition: font-size 0.5s;
+        transition: transform 1s;
     }
     .contact-container a:hover {
-        font-size: 11vw;
+        transform: scale(1.5);
     }
     a i {
-        transition: color 0.5s;
+        transition: color 1s;
     }
     a i:hover {
         color: var(--blue);
