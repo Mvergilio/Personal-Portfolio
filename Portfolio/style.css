@@ -103,6 +103,7 @@ logo,
     font-weight: 600;
     font-size: 1.7rem;
     letter-spacing: 2px;
+    margin-bottom: 2rem;
 }
 
 span {
@@ -129,6 +130,7 @@ nav {
 }
 
 #welcome-section {
+    margin: 10rem auto 10rem auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -144,7 +146,7 @@ h1>span {
 
 h1,
 h2 {
-    font-size: 2.3em;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -160,6 +162,7 @@ h1>span {
 }
 
 .welcome-box {
+    border: 2px solid #1e3d59;
     height: auto;
     margin: 1rem;
     width: 90vw;
