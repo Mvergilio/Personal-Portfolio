@@ -14,7 +14,7 @@
 
 * {
 	font-family: "Open Sans", sans-serif;
-	color: var(--gray);
+	color: black;
 	font-weight: 400;
 	margin: 0;
 	padding: 0;
@@ -24,7 +24,7 @@
 
 *::selection {
 	background-color: var(--blue);
-	color: var(--gray);
+	color: white;
 }
 
 html {
@@ -46,7 +46,7 @@ time {
 /* started of the grid */
 
 main {
-	background: var(--gradient);
+	background: var(--gray);
 	display: grid;
 	grid-template-rows: 3rem auto auto auto;
 	grid-template-areas: "header" "about" "project" "contact" "footer";
@@ -96,6 +96,7 @@ section {
 
 logo {
 	padding-left: 0.5rem;
+	color: var(--gray);
 }
 
 logo,
@@ -129,6 +130,7 @@ nav {
 	font-weight: 600;
 	text-decoration: none;
 	cursor: pointer;
+	color: var(--gray);
 }
 
 #welcome-section {
@@ -156,7 +158,7 @@ h4 {
 	text-align: center;
 	margin: 1rem;
 	color: var(--gray);
-	font-size: 1.5em;
+	font-size: 1.5rem;
 }
 
 h1 > span {
@@ -169,14 +171,16 @@ h1 > span {
 	margin: 1rem;
 	width: 90vw;
 }
-
-.welcome-box h2 {
+.title h2 {
+	font-size: 1.7rem;
+}
+.about-me h2 {
 	color: var(--blue);
-	font-size: 1.7em;
+	font-size: 1.7rem;
 }
 
 .welcome-box p {
-	font-size: 1em;
+	font-size: 1rem;
 	margin: 1rem;
 }
 
@@ -192,7 +196,7 @@ h1 > span {
 #projects h2 {
 	margin-top: 1rem;
 	color: var(--blue);
-	font-size: 1.7em;
+	font-size: 1.7rem;
 }
 
 #projects a {
@@ -210,9 +214,9 @@ h1 > span {
 	color: var(--gray);
 }
 
-#projects div a div div h5 {
-	font-size: 0.9em;
-	color: var(--orange);
+#projects div a div div h3 {
+	font-size: 0.9rem;
+	color: var(--yellow);
 	text-align: center;
 }
 
@@ -261,105 +265,18 @@ img {
 
 #contact h3 {
 	color: var(--blue);
-	font-size: 1.3em;
+	font-size: 1.3rem;
 }
 
-.contact-container {
-	width: 90vw;
-	height: 90vw;
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: repeat(5, 1fr);
-}
-
-.contact-container a {
-	padding: 0;
-	margin: 0;
-	font-size: 13vw;
-	height: 12.85vw;
-	text-align: center;
-}
-
-.contact-container a i {
-	margin: 0;
-	padding: 0;
-}
-
-.lindedin {
-	grid-area: 1/3/2/4;
-}
-
-.twitter {
-	grid-area: 1/4/2/5;
-}
-
-.github {
-	grid-area: 2/2/3/3;
-}
-
-.instagram {
-	grid-area: 2/3/2/4;
-}
-
-.facebook {
-	grid-area: 2/4/3/5;
-}
-
-.email1 {
-	grid-area: 2/5/3/6;
-}
-
-.email2 {
-	grid-area: 3/1/4/2;
-}
-
-.number {
-	grid-area: 3/2/4/3;
-}
-
-.whatsapp {
-	grid-area: 3/3/4/4;
-}
-
-.lindedin-copy {
-	grid-area: 3/4/4/5;
-}
-
-.twitter-copy {
-	grid-area: 3/5/4/6;
-}
-
-.github-copy {
-	grid-area: 3/6/4/7;
-}
-
-.instagram-copy {
-	grid-area: 4/2/5/3;
-}
-
-.facebook-copy {
-	grid-area: 4/3/5/4;
-}
-
-.email-copy1 {
-	grid-area: 4/4/5/5;
-}
-
-.email-copy2 {
-	grid-area: 4/5/5/6;
-}
-
-.number-copy {
-	grid-area: 5/3/6/4;
-}
-
-.whatsapp-copy {
-	grid-area: 5/4/6/5;
-}
+/* network contact */
 
 footer {
-	border-top: 5px solid var(--gray);
+	border-top: 5px solid var(--orange);
 	background: var(--blue);
+}
+footer h4,
+time {
+	color: var(--gray);
 }
 
 /* Midea queries from a mobile to desktop */
@@ -375,7 +292,7 @@ footer {
 		justify-content: center;
 	}
 	#welcome-section h1 {
-		font-size: 3em;
+		font-size: 3rem;
 	}
 	#projects {
 		height: auto;
@@ -399,15 +316,6 @@ footer {
 		margin-bottom: 1rem;
 	}
 	/* contact section */
-	.contact-container {
-		width: 60vw;
-		height: auto;
-		margin: 3rem;
-	}
-	.contact-container a {
-		font-size: 10vw;
-		height: 11vw;
-	}
 }
 
 @media screen and (min-width: 800px) {
@@ -461,26 +369,23 @@ footer {
 		height: 20rem;
 	}
 	#welcome-section .about-me {
-		font-size: 1.5em;
+		font-size: 1.5rem;
 		width: 75vw;
 	}
 	/* Project section */
 	#projects h2 {
 		margin: 1.5rem;
-		font-size: 2em;
+		font-size: 2rem;
 	}
 	/* contact section */
 	#contact h2 {
-		font-size: 3em;
+		font-size: 3rem;
 	}
 	#contact h3 {
-		font-size: 2em;
+		font-size: 2rem;
 	}
 	.contact-container {
 		width: 60vw;
-	}
-	.contact-container a {
-		font-size: 5em;
 	}
 }
 
@@ -493,19 +398,12 @@ footer {
 	}
 	/* Project section */
 	#projects h2 {
-		font-size: 3em;
+		font-size: 3rem;
 	}
 	.project-container a {
 		width: 35vw;
 	}
 	.project-tile {
 		width: 35vw;
-	}
-	.contact-container {
-		width: 50vw;
-	}
-	.contact-container a {
-		height: 8vw;
-		font-size: 6vw;
 	}
 }
