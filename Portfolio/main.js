@@ -1,7 +1,8 @@
 // selection the elements
 const LINKS_TO_SECTION = document.querySelectorAll('.navlink');
 const NAV_BAR = document.getElementById('navbar');
-
+const TIME = document.querySelector('.time');
+console.log(TIME.innerHTML);
 // event listeners
 LINKS_TO_SECTION.forEach((link)=>{
     link.addEventListener('click',(event)=>{
@@ -21,5 +22,12 @@ LINKS_TO_SECTION.forEach((link)=>{
       });
     })
    
-
 })
+
+// date up date
+function upDatedYear(tag){
+let year = new Date().getFullYear();
+tag.innerHTML = ` ${year}`;
+console.log(year)
+};
+upDatedYear(TIME);

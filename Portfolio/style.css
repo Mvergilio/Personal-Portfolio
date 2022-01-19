@@ -108,7 +108,7 @@ logo,
 	margin-bottom: 2rem;
 }
 
-span {
+logo span {
 	color: var(--orange);
 }
 
@@ -183,7 +183,13 @@ h1 > span {
 	font-size: 1rem;
 	margin: 1rem;
 }
-
+/* social network links */
+.links {
+	background-color: var(--orange);
+	content-visibility: 10%;
+	position: absolute;
+	left: 20px;
+}
 /* Project section */
 
 .project-container {
