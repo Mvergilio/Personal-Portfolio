@@ -169,7 +169,7 @@ h1 > span {
 	/* border: 2px solid #1e3d59; */
 	height: auto;
 	margin: 1rem;
-	width: 90vw;
+	width: 70vw;
 }
 .title h2 {
 	font-size: 1.7rem;
@@ -185,19 +185,56 @@ h1 > span {
 }
 /* social network links */
 .links {
-	background-color: var(--orange);
-	content-visibility: 10%;
 	position: absolute;
-	left: 20px;
+	left: 10px;
+	top: 50vh;
+	width: auto;
+	height: auto;
+	display: flex;
+	flex-wrap: row;
 }
+ul {
+	list-style-type: none; /* Remove bullets */
+	padding: 0; /* Remove padding */
+	margin: 0; /* Remove margins */
+}
+
+.social-link {
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 3rem;
+	color: var(--yellow);
+}
+.fab,
+.fas {
+	color: var(--yellow);
+	background-color: var(--blue);
+	border-radius: 30px;
+	display: inline;
+	z-index: -1000;
+}
+
+ul .social-network {
+	font-weight: 600;
+	font-size: 1rem;
+	font-family: 'Roboto Slab', serif;
+	display: none;
+	color: var(--blue);
+	transition: display 2000;
+}
+ul li {
+	cursor: pointer;
+}
+
 /* Project section */
 
-.project-container {
+/* .project-container {
 	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
+	flex-direction: row;
+	justify-content: space-between;
 	align-items: center;
-}
+	width: 70vw;
+} */
 
 #projects h2 {
 	margin-top: 1rem;
@@ -216,10 +253,6 @@ h1 > span {
 	box-shadow: 2px 3px 5px 1px rgba(0, 0, 0, 0.5);
 }
 
-.fas {
-	color: var(--gray);
-}
-
 #projects div a div div h3 {
 	font-size: 0.9rem;
 	color: var(--yellow);
@@ -228,7 +261,7 @@ h1 > span {
 
 .project-tile {
 	display: block;
-	width: 90vw;
+	width: 60vw;
 	height: auto;
 }
 

@@ -2,8 +2,31 @@
 const LINKS_TO_SECTION = document.querySelectorAll('.navlink');
 const NAV_BAR = document.getElementById('navbar');
 const TIME = document.querySelector('.time');
-console.log(TIME.innerHTML);
+const SOCIAL_LINKS = document.querySelectorAll('.social-link')
+// const SPAN = document.querySelectorAll('.social-network');
+
 // event listeners
+
+SOCIAL_LINKS.forEach((elem)=>{
+  elem.addEventListener('mouseover', (e)=>{
+e = e.currentTarget;
+const FIRST_CHILD = e.fisrtChild;
+const SPAN = e.querySelector('.social-network');
+console.log(FIRST_CHILD);
+console.log(SPAN)
+if(SPAN){
+  SPAN.style.display = "inline-block";
+  }
+})
+elem.addEventListener('mouseleave', (e)=>{
+  e = e.target;
+const SPAN = e.querySelector('.social-network');
+if(SPAN.style.display = "inline-block" && SPAN != null){
+ SPAN.style.display = "none";
+}
+})
+
+})
 LINKS_TO_SECTION.forEach((link)=>{
     link.addEventListener('click',(event)=>{
         // prevent default event bahavior
@@ -28,6 +51,5 @@ LINKS_TO_SECTION.forEach((link)=>{
 function upDatedYear(tag){
 let year = new Date().getFullYear();
 tag.innerHTML = ` ${year}`;
-console.log(year)
 };
 upDatedYear(TIME);
