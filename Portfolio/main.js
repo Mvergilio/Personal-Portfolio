@@ -7,7 +7,6 @@ const LINKS_CONTAINER = document.querySelector('.links');
 window.addEventListener('scroll', (e)=>{
  const TOP_POSITION_OF_THE_PAGE = LINKS_CONTAINER.offsetTop;
  let pageYOffSet = window.scrollY; 
- console.log(pageYOffSet)
  if(pageYOffSet >= TOP_POSITION_OF_THE_PAGE){
    LINKS_CONTAINER.style.position = 'fixed';
  }else{
