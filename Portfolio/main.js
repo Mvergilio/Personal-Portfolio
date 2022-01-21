@@ -2,31 +2,19 @@
 const LINKS_TO_SECTION = document.querySelectorAll('.navlink');
 const NAV_BAR = document.getElementById('navbar');
 const TIME = document.querySelector('.time');
-const SOCIAL_LINKS = document.querySelectorAll('.social-link')
-// const SPAN = document.querySelectorAll('.social-network');
-
+const LINKS_CONTAINER = document.querySelector('.links');
 // event listeners
-
-SOCIAL_LINKS.forEach((elem)=>{
-  elem.addEventListener('mouseover', (e)=>{
-e = e.currentTarget;
-const FIRST_CHILD = e.fisrtChild;
-const SPAN = e.querySelector('.social-network');
-console.log(FIRST_CHILD);
-console.log(SPAN)
-if(SPAN){
-  SPAN.style.display = "inline-block";
-  }
-})
-elem.addEventListener('mouseleave', (e)=>{
-  e = e.target;
-const SPAN = e.querySelector('.social-network');
-if(SPAN.style.display = "inline-block" && SPAN != null){
- SPAN.style.display = "none";
-}
+window.addEventListener('scroll', (e)=>{
+ const TOP_POSITION_OF_THE_PAGE = LINKS_CONTAINER.offsetTop;
+ let pageYOffSet = window.scrollY; 
+ console.log(pageYOffSet)
+ if(pageYOffSet >= TOP_POSITION_OF_THE_PAGE){
+   LINKS_CONTAINER.style.position = 'fixed';
+ }else{
+   LINKS_CONTAINER.style.position = "absolute"
+ }
 })
 
-})
 LINKS_TO_SECTION.forEach((link)=>{
     link.addEventListener('click',(event)=>{
         // prevent default event bahavior
