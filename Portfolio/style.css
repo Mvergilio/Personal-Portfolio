@@ -49,7 +49,7 @@ time {
 
 /* started of the grid */
 
-main {
+body {
   background: var(--gray);
 }
 
