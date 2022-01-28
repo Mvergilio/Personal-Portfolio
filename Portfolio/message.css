@@ -21,9 +21,9 @@ body {
   align-items: center;
 }
 .forground {
-  width: 50vw;
+  width: 80vw;
+  height: 35vh;
   background: var(--gray);
-  height: 40vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,7 +37,7 @@ body {
   background-color: var(--blue);
   border-radius: 15px;
   padding: 1rem;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   font-family: "Roboto Slab", serif;
   text-decoration: none;
   font-weight: 600;
@@ -55,6 +55,22 @@ main div .btn-message .fas{
   border: 2px solid var(--orange);
 }
 
+.background{
+  position: absolute;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  background-color: rgba(255, 110, 64, 0.7);
+
+}
 .z-index{
-  z-index: -111;
+  z-index: -1000;
+}
+
+@media screen and (min-width: 1000px){
+  .forground{
+    width: 60vw;
+  }
+  
 }
