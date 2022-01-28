@@ -1,1 +1,1 @@
-window.alert("thank you")
+// window.alert("thank you")
