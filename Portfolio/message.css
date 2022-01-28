@@ -30,10 +30,10 @@ body {
   align-items: center;
   border-radius: 10px;
 }
-.thanks{
+.thanks {
   color: var(--blue);
 }
-.btn-message{
+.btn-message {
   background-color: var(--blue);
   border-radius: 15px;
   padding: 1rem;
@@ -45,32 +45,31 @@ body {
   margin: 0.5rem;
   transition: all 0.6s ease-in;
 }
-
-main div .btn-message .fas{
- color: var(--yellow);
+/* icon of the thank you page */
+.fa-thumbs-up, .fa-kiss-wink-heart{
+  color: var(--yellow);
 }
-.btn-message:hover{
+/* icon of the error page */
+.fa-sad-tear{
+  color: var(--orange);
+  font-size: 2rem;
+}
+.fa-exclamation-triangle{
+  color: red;
+}
+/* button icon */
+main div .btn-message .fas {
+  color: var(--yellow);
+}
+.btn-message:hover {
   color: var(--blue);
   background-color: var(--gray);
   border: 2px solid var(--orange);
 }
 
-.background{
-  position: absolute;
-  height: 100vh;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  background-color: rgba(255, 110, 64, 0.7);
-
-}
-.z-index{
-  z-index: -1000;
-}
-
-@media screen and (min-width: 1000px){
-  .forground{
+@media screen and (min-width: 1000px) {
+  .forground {
     width: 60vw;
+    height: 50vh;
   }
-  
 }
