@@ -8,9 +8,13 @@ window.addEventListener('scroll', (e)=>{
  const TOP_POSITION_OF_THE_PAGE = LINKS_CONTAINER.offsetTop;
  let pageYOffSet = window.scrollY; 
  if(pageYOffSet >= TOP_POSITION_OF_THE_PAGE){
-   LINKS_CONTAINER.style.position = 'fixed';
+   setTimeout(()=>{
+     LINKS_CONTAINER.style.position = 'fixed';
+
+   }, 400)
  }else{
    LINKS_CONTAINER.style.position = "absolute"
+   
  }
 })
 
