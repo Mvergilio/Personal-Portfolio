@@ -54,7 +54,7 @@ body {
 }
 
 #navbar {
-  z-index: 1000;
+  z-index: 500;
   margin: auto;
 }
 
@@ -249,7 +249,7 @@ ul li {
   height: 100%;
 }
 
-img {
+#projects div a img {
   display: block;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
