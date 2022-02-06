@@ -21,10 +21,15 @@ window.addEventListener('scroll', (e)=>{
 LINKS_TO_SECTION.forEach((link)=>{
     link.addEventListener('click',(event)=>{
         // prevent default event bahavior
+        // if(event.currentTarget.classList)
         event.preventDefault();
-        
+        console.log(event.currentTarget.dataSet)
         let href = link.getAttribute('href').slice(1);
         let section = document.getElementById(href);
+        if(section == null){
+          this.href = "./english.html";
+          window.location = this.href;      
+          }
         let navHeight = NAV_BAR.getBoundingClientRect().height;
         let yPosition= section.offsetTop - navHeight;
     
