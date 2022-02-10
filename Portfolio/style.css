@@ -299,7 +299,9 @@ ul li {
 .form-field {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   width: 80vw;
+  height: auto;
   border: 3px solid var(--orange);
   border-radius: 10px;
   background: var(--blue);
