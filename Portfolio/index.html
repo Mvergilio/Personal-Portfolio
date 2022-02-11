@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
     <script
       src="https://kit.fontawesome.com/b78cb41484.js"
@@ -8,20 +8,244 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
+  
+  
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marco Vergilio</title>
     <link rel="stylesheet" href="./style.css" />
-  <link rel="stylesheet" href="leng.css">
+    <link rel="stylesheet" href="./leng.css" />
   </head>
 
   <body>
-    <main>
+    <!-- overly effect -->
+    <div id="leng-div">
       <h1>Choose a language</h1>
       <div class="leng-container">
-        <a href="./PT-EN/english.html"><img src="https://upload.wikimedia.org/wikipedia/commons/6/69/John_Trumbull%27s_Depiction_of_the_Flag_of_the_USA.svg" alt="USA flag"><span>English</span></a>
-        <a href="./PT-EN/portuguese.html"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg" alt="Brazil flag"><span>Português</span></a>
+        <a class="leng"href="./PT-EN/english.html"><img src="./Images/2560px-Flag_of_the_United_States.svg.png" alt="USA flag"><span>English</span></a>
+        <a class="leng portuguese"href="./index.html"><img src="./Images/Flag_of_Brazil.svg" alt="Brazil flag"><span>Português</span></a>
       </div>
-     
+    </div>
+
+    <main class="hidden">
+      <div id="navbar">
+        <logo>M<span>V</span></logo>
+        <nav class = "menu-links">
+        <a class="navlink" href="./english.html"><img src="https://upload.wikimedia.org/wikipedia/commons/6/69/John_Trumbull%27s_Depiction_of_the_Flag_of_the_USA.svg" alt="USA flag"></a>
+
+          <a href="#welcome-section" class="navlink">Sobre</a>
+          <a href="#projects" class="navlink">Projetos</a>
+          <a href="#contact" class="navlink">Contato</a>
+          <a
+            href="./resume/Marco Vergilio.pdf"
+            class="download"
+            download="resume"
+            >Curriculum</a>
+        </nav>
+      </div>
+      <section id="welcome-section">
+        <div class="title welcome-box">
+          <h1>Eu sou Marco <span>Vergilio</span></h1>
+          <h2>Um Desenvolvedor Web</h2>
+        </div>
+        <div class="about-me welcome-box">
+          <h2>Sobre Mim</h2>
+          <p>
+            Adoro passar tempo com minha família.Somos dois irmãos casados com duas irmãs. Tambem adoro ler mangas e assitir filmes e series no meu tempo livre.</p>
+          <p>
+            Sou um desenvolvedor especializado em front-end. Eu tenho uma boa compreensão de HTML semântico e CSS3 e também tenho uma boa compreensão de JavaScript.
+          </p>
+          <p>
+            Como acho que o melhor para mim é ter uma base sólida em fundamentos de programação, tenho focado nessas três tecnologias sem parar desde o início da minha jornada.
+          </p>
+        
+          <p>
+            I am very confident in my communication skills. I have strong people
+            skills. I am proactive, and I love learning new things.
+          </p>
+          
+      </div>
+    <div class="links">
+      <ul>
+        <!-- linkedin profile link -->
+        <li><a
+          href="https://www.linkedin.com/in/marco-antonio-vergilio-de-souza-a61b30219/"
+          target="_blank"
+          class="social-link lindedin"
+          ><i class="fab fa-linkedin"></i
+        >
+      <span class="social-network">Linkedin</span></a></li>
+      <!-- github link -->
+      <li><a
+        href="https://github.com/Mvergilio"
+        id="profile-link"
+        target="_blank"
+        class="social-link github"
+        ><i class="fab fa-github-square"></i
+          >
+      <span class="social-network">Github</span></a></li>
+    </a></li>
+    
+    <!-- mail information -->
+    <li> <a
+      href="mailto:mvergiliodesouza@gmail.com"
+      target="_blank"
+      class="social-link email1"
+      ><i class="fas fa-envelope-square"></i>
+        <span class="social-network">Email</span></a></li>
+      </a></li>
+       <!-- phone number -->
+        <li><a
+          href="tel:+5511993441157"
+          target="_blank"
+          class="social-link number"
+          ><i class="fas fa-phone-square-alt"></i
+        >
+        <span class="social-network">Numero</span></a></li>
+      </a></li>
+        <!-- whatsapp contact -->
+        <li><a
+          href="https://api.whatsapp.com/send?phone=+5511993441157"
+          target="_blank"
+          class="social-link whatsapp"
+          ><i class="fab fa-whatsapp-square"></i
+        >
+        <span class="social-network">Whatsapp</span></a></li>
+      </a></li>
+      </ul>
+    </div>
+      </section>
+      <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-container">
+          <a
+            href="https://codepen.io/VergilioMarco/full/jOmppKz"
+            target="_blank"
+            class="project-link"
+          >
+            <div class="project-tile">
+              <img
+                src="/Images/landing_page.png"
+                alt="phone showcase product landing page project"
+              />
+              <div class="btn-projects">
+                <h3><i class="fas fa-globe"></i> Product Landing Page</h3>
+                <p>
+                  I cloned this landing page from the web. It was my first real
+                  challenge since I was very new to code. I struggled a lot with
+                  positioning the elements on the page, it was very tough to
+                  build the responsive layout for mobile and tablet.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://displaygriddoc.netlify.app/"
+            target="_blank"
+            class="project-link"
+          >
+            <div class="project-tile">
+              <img
+                src="/Images/technical_doc_page.png"
+                alt="grid technical documentation page project"
+              />
+              <div class="btn-projects">
+                <h3>
+                  <i class="fas fa-globe"></i> Technical Documentation Page
+                </h3>
+                <p>
+                  I built it with HTML and CSS. It was fun to build since I
+                  applied grid layout on the page and the page itself is about
+                  how to apply grid layout. Building this page has taken my
+                  understanding of how to use a grid layout to another level.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://codepen.io/VergilioMarco/full/bGWraMj"
+            target="_blank"
+            class="project-link"
+          >
+            <div class="project-tile">
+              <img
+                src="/Images/survey_form.png"
+                alt="Screenshoot of a survey form project"
+              />
+              <div class="btn-projects">
+                <h3><i class="fas fa-globe"></i> Survey Form</h3>
+                <p>
+                  This is a simple survey form, I used several different input
+                  elements such as Textarea, Name, email, and many more. It is
+                  mobile and tablet responsive. I didn't connect it with any
+                  back-end.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://codepen.io/VergilioMarco/full/rNmLyer"
+            target="_blank"
+            class="project-link">
+            <div class="project-tile">
+              <img
+                src="/Images/albert_einstein.png"
+                alt="Screenshoot of a tribute page project"
+              />
+              <div class="btn-projects">
+                <h3><i class="fas fa-globe"></i> Tribute Page</h3>
+                <p>
+                  It was my first static website, which I built with HTML and
+                  CSS. I applied Flexbox layout to create a better user
+                  experience. It is mobile and tablet responsive. I used a
+                  mobile-first approach to build it.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Entre em Contato</h2>
+
+        <div class="contact-form">
+        
+
+<!-- Form tag with action and method -->
+<form class="form-field" action="https://form2channel.com?form=sample" method="POST"  enctype="multipart/form-data">
+
+  <!-- Recipients for the form info -->
+  <input type="hidden" name="formto_email" value="mavds1234@gmail.com,mvergiliodesouza@gmail.com">
+  <input type="hidden" name="_subject" value="New message from your portfolio site.">
+  
+  <!-- Custom redirects -->
+  <input type="hidden" name="formto_redirect" value="./thank.you.message.html">
+  <input type="hidden" name="formto_error" value="./error.message.html">
+  
+  <!-- Form fields need name and value attributes -->
+  <div class="flex-item">
+    <input class="input first-child" type="text" name="name" placeholder="Nome...*" id="name"required>
+  </div>
+  <div class="flex-item">
+    <input class="input" type="email" name="email" placeholder="Email...*" id="email" required>
+  </div>
+  <div class="flex-item">
+
+    <input class="input" type="text" name="subject" id="subject" placeholder="Assunto...">
+  </div>
+  <div class="flex-item-text">
+    <textarea class="input" name="message" id="message"  placeholder="Por favor digite sua menssagem...*" cols="30" rows="7" required></textarea>
+  </div>
+    <button class="btn"type="Submit">Enviar Mensssagem</button>
+  </form>
+  
+        </div>
+      </section>
+      <footer>
+        <h4>&#169; Marco Vergilio,<span class="time"> 2021</span>.</h4>
+      </footer>
     </main>
     <script src="./main.js"></script>
   </body>
