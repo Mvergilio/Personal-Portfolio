@@ -4,39 +4,37 @@ const NAV_BAR = document.getElementById("navbar");
 const TIME = document.querySelector(".time");
 const LINKS_CONTAINER = document.querySelector(".links");
 const MENU_LINKS = document.querySelector(".menu-links")
-const HIDEN_MAIN = document.querySelector(".hidden");
+const HIDDEN_MAIN = document.querySelector(".hidden");
 const LANG_BTNS = document.querySelectorAll(".leng");
+const LANG_DIV = document.querySelector("#leng-div");
 // event listeners
 
 // languages event
-let langCheck = false;
+let langCheck;
 window.sessionStorage.setItem("check", langCheck);
 console.log(sessionStorage)
   LANG_BTNS.forEach((element)=>{
   element.addEventListener("click",(e)=>{
-  // let textContent = this.Target.textContent;
-  if(element.classList.contains("portuguese")){
-    alert("It is working")
-    console.log("IT IS WORKING")
-  setItem();
+    // let textContent = this.Target.textContent;
+    if(element.classList.contains("portuguese")){
+    e.preventDefault()
+    HIDDEN_MAIN.classList.remove("hidden");
+    LANG_DIV.style.display = "none";
+    
+
   }
   
 })
 })
-function setItem(){
-  
-  langCheck = true;
-  window.sessionStorage.setItem("check", langCheck)
-  let sessionStorage = window.sessionStorage
-  return sessionStorage
-}
-async function display(){
 
-        let storage = setItem();
-        console.log(storage)
-      }
 
-display();
+window.addEventListener("DOMContentLoaded", ()=>{
+  let key =  sessionStorage.getItem("check")
+  if(key == "true"){
+    
+    console.log(key);
+  }
+})
 
 window.addEventListener("scroll", (e) => {
   const TOP_POSITION_OF_THE_PAGE = LINKS_CONTAINER.offsetTop;

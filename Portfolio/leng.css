@@ -41,13 +41,13 @@
   justify-content: space-evenly;
   align-items: center;
 }
-img {
+#leng-div .leng-container img {
   height: 5rem;
   max-width: 100%;
   border-radius: 20px;
   display: inline;
 }
-a {
+#leng-div .leng-container a {
   padding: 1rem;
   width: 10rem;
   text-decoration: none;
@@ -57,7 +57,7 @@ a {
   justify-content: space-evenly;
   align-items: center;
 }
-span {
+#leng-div .leng-container a span {
   font-weight: 600;
   font-family: "Roboto Slab", serif;
   color: #1e3d59;
@@ -69,21 +69,21 @@ span {
     width: 50vw;
     height: 40vh;
   }
-  span {
+  #leng-div .leng-container a span {
     opacity: 0;
     font-size: 0;
     transition: all 600ms;
   }
 
-  a:hover > span {
+  #leng-div .leng-container a:hover > span {
     color: var(--blue);
     opacity: 1;
     font-size: 1.5rem;
   }
-  img{
+  #leng-div .leng-container a img{
       transition: all 600ms;
   }
-  a:hover img{
+  #leng-div .leng-container a:hover img{
       transform: scale(1.2);
   }
 }
