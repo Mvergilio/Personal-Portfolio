@@ -11,8 +11,7 @@ const LANG_DIV = document.querySelector("#leng-div");
 
 // languages event
 let langCheck;
-window.sessionStorage.setItem("check", langCheck);
-console.log(sessionStorage)
+
   LANG_BTNS.forEach((element)=>{
   element.addEventListener("click",(e)=>{
     // let textContent = this.Target.textContent;
@@ -20,21 +19,23 @@ console.log(sessionStorage)
     e.preventDefault()
     HIDDEN_MAIN.classList.remove("hidden");
     LANG_DIV.style.display = "none";
-    
-
+    langCheck = true;
+    window.sessionStorage.setItem("check", langCheck)
+location.reload()
   }
   
 })
 })
 
 
-window.addEventListener("DOMContentLoaded", ()=>{
+window.onload = ()=>{
   let key =  sessionStorage.getItem("check")
   if(key == "true"){
-    
-    console.log(key);
+HIDDEN_MAIN.classList.remove("hidden");
+LANG_DIV.style.display = "none";
+
   }
-})
+};
 
 window.addEventListener("scroll", (e) => {
   const TOP_POSITION_OF_THE_PAGE = LINKS_CONTAINER.offsetTop;

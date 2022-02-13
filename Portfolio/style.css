@@ -286,6 +286,7 @@ ul li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: auto;
 }
 #contact h2 {
   color: var(--orange);
@@ -301,11 +302,11 @@ ul li {
   flex-direction: column;
   justify-content: space-evenly;
   width: 80vw;
-  height: auto;
+  height: auto ;
   border: 3px solid var(--orange);
   border-radius: 10px;
   background: var(--blue);
-  height: 60vh;
+  margin-bottom: 2rem;
 }
 .flex-item {
   height: 2.5rem;
