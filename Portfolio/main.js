@@ -12,30 +12,32 @@ const LANG_DIV = document.querySelector("#leng-div");
 // languages event
 let langCheck;
 
-  LANG_BTNS.forEach((element)=>{
-  element.addEventListener("click",(e)=>{
+LANG_BTNS.forEach((element) => {
+  element.addEventListener("click", (e) => {
     // let textContent = this.Target.textContent;
-    if(element.classList.contains("portuguese")){
-    e.preventDefault()
+    if (element.classList.contains("portuguese")) {
+      langCheck = "portuguese";
+
+    } else {
+      langCheck = "english";
+    }
+    window.sessionStorage.setItem("check", langCheck)
+    location.reload();
+  })
+})
+
+window.addEventListener('load', () => {
+  let key = sessionStorage.getItem('check');
+  if (key == "english") {
+    window.Location = './english.html';
+    return
+  } else if (key == "portuguese") {
+    window.Location = "./portuguese";
     HIDDEN_MAIN.classList.remove("hidden");
     LANG_DIV.style.display = "none";
-    langCheck = true;
-    window.sessionStorage.setItem("check", langCheck)
-location.reload()
   }
-  
-})
 })
 
-
-window.onload = ()=>{
-  let key =  sessionStorage.getItem("check")
-  if(key == "true"){
-HIDDEN_MAIN.classList.remove("hidden");
-LANG_DIV.style.display = "none";
-
-  }
-};
 
 window.addEventListener("scroll", (e) => {
   const TOP_POSITION_OF_THE_PAGE = LINKS_CONTAINER.offsetTop;
