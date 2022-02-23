@@ -30,7 +30,8 @@ window.addEventListener('load', () => {
   let key = sessionStorage.getItem('check');
   if (key == "english") {
     window.Location = './english.html';
-    return
+    HIDDEN_MAIN.classList.remove("hidden");
+    LANG_DIV.style.display = "none";
   } else if (key == "portuguese") {
     window.Location = "./portuguese";
     HIDDEN_MAIN.classList.remove("hidden");
