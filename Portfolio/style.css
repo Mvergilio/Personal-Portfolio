@@ -88,6 +88,10 @@ logo {
   padding-left: 0.5rem;
   color: var(--gray);
 }
+.brazil-flag{
+  padding: 1rem;
+  width: 100%;
+}
 
 logo,
 #navbar span {
@@ -105,7 +109,6 @@ logo span {
 nav {
   margin-right: 1rem;
   height: auto;
-  /* width: 60vw; */
   display: flex;
   justify-content: space-between;
   background-color: var(--blue);
